@@ -193,8 +193,19 @@ label observation_room:
         "Instead of the constellation seen on the outside, You see a glowing geometric shape."
         "You then hear a voice inside your head, similar to Aria but devoid of emotion whispering in your ear:"
         h "Pillars on the foundation of earth, four ends of light."
-        m "On th foundation.... 2 of equator and 2 from the poles...Meaning that the final number is four.."
-        
+        m "On the foundation.... 2 of equator and 2 from the poles...Meaning that the final number is four.."
+        l "The earth is a damn sphere dumbass it doesnt have pillars, its obviously zero."
+        m "No, i hear the voice, it is definitely four"
+        m "At the end, the voice said 'life flow is {i}constant{/i}"
+        l "Are you stupid??"
+        "All of a sudden, an earthquake like tremor comes by and you can hear the buzzing,BEEP.BEEP.BEEP.BEEP, Louder every second."
+        l "Oh no, we only have 2 minutes and thirty seconds!!!! We need to rush back to the door."
+        "{i}You quickly make the run for the door intending to go and insert the code.{/i}"
+        jump code_enter
+        label code_enter:
+            scene bg 
+
+
 
 
 
