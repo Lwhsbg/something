@@ -175,6 +175,28 @@ label observation_room:
     jump lens_view
     "Adjust the manual focus knobs to search outside of targeted constellation."
     jump focus_elsewhere
+    "Search the heavy brass base of the telescope for a compartment"
+    jump sneaky_look
+
+    label focus_elsewhere:
+        "You shift the focus elsewhere from the constellation, and see a binary code blinking for a second."
+        "It quickly disappears before you can even read and decode it."
+        l "Youre going to lose the main constellation if you wander too much. Hurry."
+        jump observation_room
+    label sneaky_look:
+        "You run your hands through the dark brass base gap."
+        "You proceed to find nothing but spiders."
+            l "You thimk that you are so smart, dont you?"
+            jump observation_room
+    label lens_view:
+        "You look deeply into the lens of the telescope."
+        "Instead of the constellation seen on the outside, You see a glowing geometric shape."
+        "You then hear a voice inside your head, similar to Aria but devoid of emotion whispering in your ear:"
+        h "Pillars on the foundation of earth, four ends of light."
+        m "On th foundation.... 2 of equator and 2 from the poles...Meaning that the final number is four.."
+        
+
+
 
 
 
