@@ -144,7 +144,33 @@ label page_1:
         l "But if we take the sine, which is meant to be the exact opposite of cosine, the value results in a zero. So it might be a trap for the permanent faliure of the system."
         l "What do you make of this? My initution is pretty sharp if you could not tell."
         m "Lets discuss it at the end."
+jump room1
+scene bg lab_dark with dissolve
         
+        "You stand back in the central laboratory. The first archive door stands open, its blue light fading, while the remaining two doors loom before you."
+        "The red stopwatch ticks down relentlessly on the wall."
+
+        menu:
+            "Enter the first door (The Hall of Archives - COMPLETED)":
+                "You've already extracted the data from this sector. No time to look back."
+                jump room1
+            "Enter the second door (The Infinite Library- COMPLETED)":
+                jump room1
+            "Enter the third door(The Observation Spire)":
+                jump observation_room
+
+label observation_room:
+    scene bg observation_bg with dissolve
+    "You push through the final door- with 12 minutes left on the clock."
+    l "Hurry up [player_name]", we dont have all the time in the world."
+    "You grab the key you got from the second room and unlocked the third door."
+    "With Aria still on your hands, You rush inside."
+    "You come upon a glass-bottomed observation deck, 
+
+
+                
+
+
 
 
     
