@@ -221,6 +221,9 @@ label ending_path_1
 "{i}As soon as she saw you press 3, she immediately panicked and started screaming."
 l "NO,NO,WHAT ARE YOU DOING? I TOLD YOU IT IS 000. STOP WE WILL BOTH DIE. DO YOU NOT VALUE YOUR LIFE??"
 m "Shut up, I know what you are trying to do."
+l "WHAT????WHAT DO YOU MEAN?HOW?"
+"{i}You finish pressing the code. The device in your shoulders bursts.{/i}"
+
 
 
 
