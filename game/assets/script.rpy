@@ -162,10 +162,22 @@ scene bg lab_dark with dissolve
 label observation_room:
     scene bg observation_bg with dissolve
     "You push through the final door- with 12 minutes left on the clock."
-    l "Hurry up [player_name]", we dont have all the time in the world."
+    l "Hurry up [player_name], we dont have all the time in the world." 
     "You grab the key you got from the second room and unlocked the third door."
     "With Aria still on your hands, You rush inside."
-    "You come upon a glass-bottomed observation deck, 
+    "You come upon a glass-bottomed observation deck."
+    "Below you, lies an endless mechanical chasm, almost transparent having no end."
+    m "This place is absolutely massive, almost underground. How was this even constructed..."
+    l "Its a constructed reality, or at least i think that it is. My database is heavily fragmented."
+    "In the center of it all is a heavy brass covered telescope, pointed at a specific constellation."
+    menu:
+        "look through the primary lens of the telescope."
+    jump lens_view
+    "Adjust the manual focus knobs to search outside of targeted constellation."
+    jump focus_elsewhere
+
+
+
 
 
                 
