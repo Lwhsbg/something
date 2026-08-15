@@ -12,7 +12,7 @@ with hpunch
 me "Ughh... my head hurts... it feels like it is going to split into two."
 me "Where... where am I? What is this place?"
 "You push yourself off the cold concrete floor. The room is wide, windowless and distinctly divided into three different spaces."
-"On the far wall, there is a big red stopwatch with a counter indicating 15:00 surrounded by LEDs."
+"On the far wall, there is a big red stopwatch with a counter indicating 30:00 surrounded by LEDs."
 "The only way out seems to be a door, which is blocked by a cold, heavy steel shutter."
 "There seems to be a machine with a four letter key to trigger the escape mechanism."
 "Then You hear a sudden buzz from the speaker in the top corner of that room."
@@ -23,5 +23,131 @@ m "Leave this room? How do I?"
 a "Figure it out yourself. Your timer starts in a minute now."
 a "You will be provided an assistant to solve this, keep in mind she will die with you if you fail."
 m "Assistant? Dead? Room? What the fuck is all of this?"
-a "Bye Bitch.{i}Lets see how he does this time{/i}"
+a "Bye.{i}Lets see how he does this time{/i}"
+"{i}You slowly lose your conciousness and fall into the ground.{/i}"
+"{i}Two hours pass.{/i}"
+m "My head hurts..."
+m "What happened.."
+"There is a small microphone device besides you"
+m "Whats this?"
+l "Hello [player_name]."
+m "Who are you?"
+l " I am Aria, Your assistant in work, pleasure to meet you."
+"{i}You look at the right to see three doors.{/i}"
+m "They were not here before."
+l "Yes, We need to move through them if we want any chance of opening that main shutter."
+l "There are three doors which contains 3 numbers which you need for the final code."
+"BEEP.BEEP.BEEP."
+l "The counter is on, we need to hurry now. Ask questions later, we need to survive."
+label room1:
+        
+        scene bg lab_dark with dissolve
+        
+        "You stand back in the central laboratory. The three distinct archways loom before you, and the red stopwatch ticks down."
+
+        menu:
+            "Enter the first door (The Hall of Archives)":
+                jump archive_room
+            "Enter the second door (The Infinite Library - Locked)":
+                l "That door is sealed. We need to clear the first sector before the mechanisms unlock."
+                jump room1
+            "Enter the third door (The Observation Spire - Locked)":
+                l "Focus on the path in front of us first, [player_name]."
+                jump room1
+
+label archive_room:
+    scene bg archive_room with dissolve
+    "You push through the first door carrying the microphone Aria is speking from inside the room."
+    "You find yourself in a vast, cathedral-like chamber. Thousands of vertical glass pillars pulse with a cold, pale blue light—frozen holographic data streams."
+    m "What is this? It looks like a large digital graveyard..."
+    l "Old project logs, data storage, look there is an actve terminal in the middle."
+    l "Maybe we can find some hints there. Go towards that."
+    m "Okay."
+    "A lone computer terminal stands amidst the pillars, casting an eerie glow over a pile of fractured data-chips."
+menu:
+            "Examine the corrupted data cluster marked 'Iteration 0'.":
+                jump cluster_zero
+            "Examine the pulsing data cluster marked 'Iteration 3'.":
+                jump cluster_three
+            "Shatter one of the glass memory pillars out of frustration.":
+                jump cluster_smash
+
+    label cluster_zero:
+        " You plug the terminal into the first cluster. A screeching burst of static floods your ears."
+        "A synthetic voice echoes: '{i}Error. Sector empty. Nothing remains. Zero data found.{/i}'"
+        l "A dead end. Let's not waste time here."
+        jump archive_room
+
+    label cluster_smash:
+        "You strike a glass pillar with your fist. It shatters into a million harmless shards of light."
+        l "Hey! Calm down, [player_name]. Breaking things isn't going to give us the answer."
+        jump archive_room
+    label cluster_three:
+        "You access the 'Iteration 3' cluster. The blue light instantly shifts to a steady, solid amber."
+        "A text log manifests directly onto the screen:"
+        "{i}'Log 03: The core architecture required structural redundancy. Attempt number 3 was the only iteration where the containment field held stable. Remember the number three.'{/i}"
+        
+        "Iteration three... That's it. The first number is three."
+        l "Iteration three? Wait... are you sure? System logs can be altered..."
+        l "As far back as i can remember, i think zero has been the core of this structure. There is a big chance it has been altered to test my memory."
+        "{i}You can sense a bit of panic as she says that{/i}"
+        l "Maybe it really is just zero at the root. But... your call, [player_name]."
+        "The terminal screen flickers, briefly displaying a glowing **[ 3 ]** before locking in."
+        "You pocket the realization and head back through the sliding door toward the central chamber."
+        jump room1
+label room1:
+        
+        scene bg lab_dark with dissolve
+        
+        "You stand back in the central laboratory. The first archive door stands open, its blue light fading, while the remaining two doors loom before you."
+        "The red stopwatch ticks down relentlessly on the wall."
+
+        menu:
+            "Enter the first door (The Hall of Archives - COMPLETED)":
+                "You've already extracted the data from this sector. No time to look back."
+                jump room1
+            "Enter the second door (The Infinite Library)":
+                jump library_room
+            "Enter the third door (The Observation Spire - Locked)":
+                l "That top spire is still sealed. Clear the library first, [player_name]."
+                jump room1
+                
+label library_room:
+    scene library_bg with dissolve
+    "You enter through the second room carrying the device containing Aria."
+    "You find yourself in a surreal, towering library. Endless rows of mahogany bookshelves stretch upward into an infinite abyss of shadow."
+    m "Books? In an underground high-tech facility? What kind of sick psychological game is this?"
+    l "Nostalgic... Perhaps I have a deep connection to this library which i cannot seem to remember..."
+    "A single, massive reading desk sits dead center in the room. On top of it lies an open book, its pages glowing with a soft, ethereal white script."
+    menu:
+        "Examine The Glowing Text on the open book.":
+            jump page_1
+        "Try to pull off a book from the floating edges."
+jump rand_book
+"Ignore the obvious and start searching for the dark corners."
+jump dark_interests
+label rand_book:
+    "You reach out to a random book on the shelf. The book disintegrates into a black dust as soon as you touch the cover."
+    l "Hey [player_name], dont go around touching anomalies, focus on the center or you might face something bad."
+    jump library_room
+label dark_interests:
+    "You go on searching the endless maze of the library, but find no means of an end or a hint."
+    "Frustrated, you return back."
+    l "Hurry up, we do not have much time in our hands."
+label page_1:
+    "You lean over the desk. The glowing script rearranges itself into a stark, unambiguous statement:"
+        "{i}'The second variable stands alone. It represents the singular axis, the truth from which all other logic flows. Chapter One: Unity.'{/i}"
+        m "Singular axis.....Unity....thats the second digit."
+        l "The number one....wait..."
+        l "{i}Her voice drops into a tense, static laced whisper over the microphone.{/i}"
+        l "Can we be sure about this? In a closed loop the value of the ratio of cosine integrated by my memory of this place says that it might be a trap."
+        l "But if we take the sine, which is meant to be the exact opposite of cosine, the value results in a zero. So it might be a trap for the permanent faliure of the system."
+        l "What do you make of this? My initution is pretty sharp if you could not tell."
+        m "Lets discuss it at the end."
+        
+
+
+    
+
+
 
