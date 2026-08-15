@@ -2,6 +2,7 @@
 player_name = player_name.strip()
 if not player_name:
     player_name = "Pipipi"
+    label start:
 scene black
 "A sharp, metallic click echoes in the darkness, followed by a low electrical hum."
 "{i}[ System active. Oxygen Levels Optimal. Memory Status: Severely Corrupted.]{/i}"
@@ -203,7 +204,25 @@ label observation_room:
         "{i}You quickly make the run for the door intending to go and insert the code.{/i}"
         jump code_enter
         label code_enter:
-            scene bg 
+            scene bg lab_dark with dissolve
+            "{i}You find yourself, along with your helper Aria, in front of the button."
+            l "Quick, enter the code, it is 000."
+            m "{i}Everything was hinting towards 314.{/i}"
+        menu:
+            "{i}You go with your initution and choose 314.{/i}"
+jump ending_path_1
+"{i}You trust Aria and pick 000.{/i}"
+jump ending_path_2
+label ending_path_2:
+    "{i}You trusted Aria and pressed 000.{/i}"
+    "{i}As soon as you pressed 000, you feel a neural jolt and fall."
+    jump start
+label ending_path_1
+"{i}As soon as she saw you press 3, she immediately panicked and started screaming."
+l "NO,NO,WHAT ARE YOU DOING? I TOLD YOU IT IS 000. STOP WE WILL BOTH DIE. DO YOU NOT VALUE YOUR LIFE??"
+m "Shut up, I know what you are trying to do."
+
+
 
 
 
