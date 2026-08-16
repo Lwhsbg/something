@@ -272,7 +272,24 @@ label laboratory:
     m "{i}Shape of the constellation????{/i}"
     m "{i}I heard a voice at the end, but saw the shape in the previous 1110????{/i}"
     m "{i}Did that old man change it? No way he said he could not meddle inside the room.{/i}"
-    m ""
+    m "{i}Then what was that??{/i}"
+    m "{i}That voice sounded like Aria, But with a warmer tone{/i}"
+    m "{i}I need to ask the old man about this{/i}"
+    m "{i}Two hours pass..."
+    label lab_talk:
+        scene bg lab_bg with dissolve with hpunch
+        "{i}You wake up in complete silence, just with the metal sounds of the old man working on a machine.{/i}"
+        show a neutral with dissolve
+        a "Morning."
+        hide a with dissolve
+        m "What is that you are working on?"
+        show a neutral with dissolve
+        a "You will know soon enough, I am going to complete it."
+        hide a with dissolve
+        m "..."
+        show a neutral with dissolve
+        a "Oh looks like I am missing a part, I need to go urgently, I have to finish this by 3 days."
+        hide a with dissolve
 
 
 
