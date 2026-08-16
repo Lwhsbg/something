@@ -290,6 +290,33 @@ label laboratory:
         show a neutral with dissolve
         a "Oh looks like I am missing a part, I need to go urgently, I have to finish this by 3 days."
         hide a with dissolve
+        m "..."
+        label search_machine:
+            "{i}The old man has gone to buy parts leaving you with some time, the machine is wide oen and you decide to search it up.{/i}"
+            menu:
+            "You look inside the machine."
+            jump inside_look
+            "You look in the other parts of the lab"
+            jump other_parts
+            "You look around the corners of the machine."
+            jump machine_corners
+label inside_look:
+    "{i}You look at the inside of the machine thinking you could find the clues on what the machine was about.{/i}"
+    "{i}There were parts you've never seen before, the technology way more advanced than what it was a year before.{/i}" 
+    m "This is not going to help."
+    jump search_machine
+label other_parts:
+    "{i}You look at the corners of the lab thinking you will find something better there.{/i}"
+    "{i}You find nothing.{/i}"
+    m "This won't help."
+    jump search_machine
+label machine_corners:
+    "{i}You scour through the corners of the machine, then stumble upon a diary hidden inside.{/i}"
+    m "What is this?"
+    m "Did I find his diary? This will help a lot."
+    "{i}You open up the diary and start looking at the pages." 
+
+
 
 
 
