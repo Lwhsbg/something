@@ -42,7 +42,7 @@ l "There are three doors which contains 3 numbers which you need for the final c
 l "The counter is on, we need to hurry now. Ask questions later, we need to survive."
 label room1:
         
-        scene bg lab_dark with dissolve
+        scene bg lab_dark with dissolve with hpunch
         
         "You stand back in the central laboratory. The three distinct archways loom before you, and the red stopwatch ticks down."
 
@@ -57,7 +57,7 @@ label room1:
                 jump room1
 
 label archive_room:
-    scene bg archive_room with dissolve
+    scene bg archive_room with dissolve with hpunch
     "You push through the first door carrying the microphone Aria is speking from inside the room."
     "You find yourself in a vast, cathedral-like chamber. Thousands of vertical glass pillars pulse with a cold, pale blue light—frozen holographic data streams."
     m "What is this? It looks like a large digital graveyard..."
@@ -73,7 +73,7 @@ menu:
             "Shatter one of the glass memory pillars out of frustration.":
                 jump cluster_smash
 
-    label cluster_zero:
+label cluster_zero:
         " You plug the terminal into the first cluster. A screeching burst of static floods your ears."
         "A synthetic voice echoes: '{i}Error. Sector empty. Nothing remains. Zero data found.{/i}'"
         l "A dead end. Let's not waste time here."
@@ -98,7 +98,7 @@ menu:
         jump room1
 label room1:
         
-        scene bg lab_dark with dissolve
+        scene bg lab_dark with dissolve with hpunch
         
         "You stand back in the central laboratory. The first archive door stands open, its blue light fading, while the remaining two doors loom before you."
         "The red stopwatch ticks down relentlessly on the wall."
@@ -114,7 +114,7 @@ label room1:
                 jump room1
                 
 label library_room:
-    scene library_bg with dissolve
+    scene library_bg with dissolve with hpunch
     "You enter through the second room carrying the device containing Aria."
     "You find yourself in a surreal, towering library. Endless rows of mahogany bookshelves stretch upward into an infinite abyss of shadow."
     m "Books? In an underground high-tech facility? What kind of sick psychological game is this?"
@@ -146,7 +146,7 @@ label page_1:
         l "What do you make of this? My initution is pretty sharp if you could not tell."
         m "Lets discuss it at the end."
 jump room1
-scene bg lab_dark with dissolve
+scene bg lab_dark with dissolve with hpunch
         
         "You stand back in the central laboratory. The first archive door stands open, its blue light fading, while the remaining two doors loom before you."
         "The red stopwatch ticks down relentlessly on the wall."
@@ -161,7 +161,7 @@ scene bg lab_dark with dissolve
                 jump observation_room
 
 label observation_room:
-    scene bg observation_bg with dissolve
+    scene bg observation_bg with dissolve with hpunch
     "You push through the final door- with 12 minutes left on the clock."
     l "Hurry up [player_name], we dont have all the time in the world." 
     "You grab the key you got from the second room and unlocked the third door."
@@ -193,7 +193,7 @@ label observation_room:
         "You look deeply into the lens of the telescope."
         "Instead of the constellation seen on the outside, You see a glowing geometric shape."
         "You then hear a voice inside your head, similar to Aria but devoid of emotion whispering in your ear:"
-        h "Pillars on the foundation of earth, four ends of light."
+        h "Pillars on the foundation of earth, four ends of light, where I lay waiting for you."
         m "On the foundation.... 2 of equator and 2 from the poles...Meaning that the final number is four.."
         l "The earth is a damn sphere dumbass it doesnt have pillars, its obviously zero."
         m "No, i hear the voice, it is definitely four"
@@ -204,8 +204,8 @@ label observation_room:
         "{i}You quickly make the run for the door intending to go and insert the code.{/i}"
         jump code_enter
         label code_enter:
-            scene bg lab_dark with dissolve
-            "{i}You find yourself, along with your helper Aria, in front of the button."
+            scene bg lab_dark with dissolve with hpunch
+            "{i}You find yourself, along with your helper Aria, in front of the button.{/i}"
             l "Quick, enter the code, it is 000."
             m "{i}Everything was hinting towards 314.{/i}"
         menu:
@@ -246,8 +246,33 @@ label laboratory:
     m "{i}This will take a while for me to be done. What could be his purpose? What is my purpose in this world?{/i}"
     m "{i}Am i going to live forever? What am I supposed to do now that it has come to this?{/i}"
     m "{i}I cannot feel anything about the future, but i can feel a warm warmth waiting for me... I do not know what but it has me bounded into reality.{/i}"
-    m "{i}I should focus on what is infront of me right now and focuson these other things later.{/i}"
-    
+    m "{i}I should focus on what is infront of me right now and think about these other things later.{/i}"
+    scene bg lab_bg with dissolve with hpunch
+    show a neutral with dissolve
+    a "Sit. Don't think of an escape, You are safe here."
+    hide a with dissolve
+    m "I would not try, I have too many questions."
+    show a neutral with dissolve
+    a "I havent been able to sleep peacefully in days. I can finally rest easy now. I will be in the cabin, do not move an inch from here."
+    "{i}The old man limps towards somewhere, leaving you alone in the lab{/i}"
+    hide a with dissolve
+    "{i}You slowly close your eyes, and go into seep thinking.{/i}"
+    scene white 
+    m "Let's run it back, I can finally remember everything."
+    "{i}As you were programmed for the limitless memories, you can easily recall every loop you have been through.{i}"
+    m "{i}Looks like that machine was the one altering with my memories. It all came back as soon as it got destroyed."
+    m "{i}1111(ehehe) loops, 1110 faliures and one success. Aria stopped me for that long.{/i}"
+    m "{i}Come to think of it, Aria at the start seemed like a hollow robot, but after 1107 loops, she completely turned over.{/i}"
+    m "{i}That is strange. And she was not in possesion of the old man in the end, while she was supposed to be the regular data retriever.{/i}"
+    m "{i}Interesting.{/i}"
+    m "{i}Let's think of the hints. 3 displayed in the terminal, 1 hinted at the book, and the shape of the constellation being four.{/i}"
+    m "{i}Huh?{/i}"
+    m "{i}Huh?{/i}"
+    m "{i}HuHHHHHHHHHHHHHHHHH?{/i}"
+    m "{i}Shape of the constellation????{/i}"
+    m "{i}I heard a voice at the end, but saw the shape in the previous 1110????{/i}"
+    m "{i}Did that old man change it? No way he said he could not meddle inside the room.{/i}"
+    m ""
 
 
 
