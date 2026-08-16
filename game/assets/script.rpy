@@ -223,6 +223,32 @@ l "NO,NO,WHAT ARE YOU DOING? I TOLD YOU IT IS 000. STOP WE WILL BOTH DIE. DO YOU
 m "Shut up, I know what you are trying to do."
 l "WHAT????WHAT DO YOU MEAN?HOW?"
 "{i}You finish pressing the code. The device in your shoulders bursts.{/i}"
+"{i}The steel shutter falls down completely, with a loud noise.{/i}"
+"{i}In a distance along the smoke, You see the figure of a man approaching closer."
+show a neutral with dissolve
+a "Well well well, How many loops has it been now, feels like forever."
+hide a with dissolve
+m "Huh?"
+"{i}You suddenly feel a sharp pain in your core, then you finally recover the fragments of your memories."
+"{i}You come to the realization that you were never a real human, just an artificial one, made by the man infront of you."
+"{i}You  lived for 2 months before you had been in this loop for an entire year with no explanation."
+m "I remember it now. Why did you do this to me?"
+show a neutral with dissolve
+a "Remember yourself from a year ago, dont you feel something?"
+a "You were not like this, [player_name], you were just a hollow shell with no sense of comprehension."
+a "I have been working on this for years on no end, then i finally figured out that if i create a loop which keeps the initution and behavioural changes intact and alters the memory, i can finally put emotions in machines."
+a "I created you with caution, ran some of my previous experiments just in case which failed, so you, my special test subject had to be put in a hologram loop."
+a "And as i had predicted, inside a year this was a success."
+a "{i}Follow me to the lab and process whatever you learned in the past year."
+hide a with dissolve
+label laboratory:
+    scene black
+    m "{i}This will take a while for me to be done. What could be his purpose? What is my purpose in this world?{/i}"
+    m "{i}Am i going to live forever? What am I supposed to do now that it has come to this?{/i}"
+    m "{i}I cannot feel anything about the future, but i can feel a warm warmth waiting for me... I do not know what but it has me bounded into reality.{/i}"
+    m "{i}I should focus on what is infront of me right now and focuson these other things later.{/i}"
+    
+
 
 
 
