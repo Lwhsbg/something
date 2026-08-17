@@ -314,10 +314,18 @@ label machine_corners:
     "{i}You scour through the corners of the machine, then stumble upon a diary hidden inside.{/i}"
     m "What is this?"
     m "Did I find his diary? This will help a lot."
-    "{i}You open up the diary and start looking at the pages." 
-
-
-
+    "{i}You open up the diary and start looking at the pages.{/i}"
+    "{i}You flip the pages. Machinery, New part designs, Update logs, Reminders, Projects and then...{/i}"
+    m "Secret pages?"
+    m "Huh? What is this about?"
+    "{i}You start reading the journal{/i}" 
+    "{i}April 22, 2023(Approximately 3 years ago) 'I have figured out the secret to immortality, the solution to my genius mortal life. As long as I can find that one core and work along it...'{/i}"
+    m "Core? Does he mean mine? And what does he mean by immortality?"
+    "{i}July 11, 2023(Three months later), 'I have located the core. But this darn Artificial Being holding me back from retrieving it, Are they intertwined or something?'{/i}"
+    m "{i}Artificial Being?{/i}"
+    "{i}Your head suddenly spikes with pain, making you nearly black out{/i}"
+    m "What just happened?..."
+    "{i}You felt as if "
 
 
 
