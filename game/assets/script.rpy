@@ -350,6 +350,20 @@ label machine_corners:
     m "I need to go to the Observation Spire. She knows a way out."
     "{i}You hurry to the observation spire.{/i}"
     label final_spirescene
+    scene bg observation_bg with dissolve with hpunch
+    "{i}You see the telescope in the middle and hurry to it. An endless void stretches down beneath it.{/i}"
+    "{i}Then you can hear the same voice calling from below, as if telling you to jump down. As ig=f that was the only escape and the chance to be set free from the lab.{/i}"
+    "{i}A strange feeling surges to you and then you jump down without any hesitation.{/i}"
+    scene bg black with dissolve with hpunch
+    "{i}You see a strange cord which sucks you in.{/i}"
+    "{i}You gain consciousness after 2 hours but cannot open your eyes and can feel your consciousness slowly fading away."
+    "{i}You then hear a soft, familiar voice.{/i}"
+    "You are safe now."
+    m "{i}The voice in the spire?... No wait Aria?.. I cannot speak.. Fuck I'm fading away."
+    scene bg cave_bg with dissolve with hpunch
+    show b neutral with dissolve
+    l "Now what? Need to get rid of the old man?"
+    l "What a fucking pain... Anything for my duties I guess."
 
 
 
